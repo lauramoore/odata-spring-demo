@@ -22,7 +22,7 @@ import org.springframework.web.context.WebApplicationContext;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @WebAppConfiguration
-@ContextConfiguration("WelcomeTests-config.xml")
+@ContextConfiguration("Tests-config.xml")
 public class WelcomeTest {
 
 	

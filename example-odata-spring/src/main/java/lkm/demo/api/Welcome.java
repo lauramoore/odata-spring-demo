@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class Welcome {
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "/welcome", method = RequestMethod.GET)
 	public ResponseEntity<String> welcome(){
 		return new ResponseEntity<String>("Welcome", HttpStatus.OK);
 	}

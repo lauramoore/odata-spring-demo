@@ -38,7 +38,7 @@ public class OdataTest {
 	    
 	    @Test
 	    public void shouldRespondOK() throws Exception {
-	        ResultActions actions = this.mockMvc.perform(get("/cars").accept(MediaType.APPLICATION_JSON));
+	        ResultActions actions = this.mockMvc.perform(get("/Cars/").accept(MediaType.APPLICATION_JSON));
 	        actions.andDo(print()); // action is logged into the console
 	       actions.andExpect(status().isNotFound());
 	        //actions.andExpect(content().contentType("application/xml"));

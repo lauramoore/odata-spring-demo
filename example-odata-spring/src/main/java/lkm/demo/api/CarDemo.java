@@ -29,7 +29,7 @@ public class CarDemo {
 	      handler.register(new CarsProcessor(new DataProvider()));
 	}
 	
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+	@RequestMapping(value = "/Cars**", method = RequestMethod.GET)
 	public void car(HttpServletRequest req, HttpServletResponse resp){
 		//the olingo http handler serializes and outputs the response data.
 		//can look at approaches to decouple this and get better handling with Spring
